@@ -1,9 +1,8 @@
 const schema = {
-
   _id: {
     type: String,
     optional: true,
-    canRead: ['guests'],
+    canRead: ['guests']
   },
 
   createdAt: {
@@ -24,14 +23,14 @@ const schema = {
     Uncomment on #Step12:
 
     */
-    // resolveAs: {
-    //   fieldName: 'user',
-    //   type: 'User',
-    //   resolver: async (movie, args, context) => {
-    //     return await context.Users.loader.load(movie.userId);
-    //   },
-    //   addOriginalField: true,
-    // },
+    resolveAs: {
+      fieldName: 'user',
+      type: 'User',
+      resolver: async (movie, args, context) => {
+        return await context.Users.loader.load(movie.userId);
+      },
+      addOriginalField: true
+    }
   },
 
   name: {
@@ -41,7 +40,7 @@ const schema = {
     canRead: ['guests'],
     canCreate: ['members'],
     canUpdate: ['members'],
-    searchable: true,
+    searchable: true
   },
 
   review: {
@@ -52,9 +51,8 @@ const schema = {
     canRead: ['guests'],
     canCreate: ['members'],
     canUpdate: ['members'],
-    searchable: true,
-  },
-
+    searchable: true
+  }
 };
 
 export default schema;

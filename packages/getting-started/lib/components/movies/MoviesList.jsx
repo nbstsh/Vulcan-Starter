@@ -30,8 +30,8 @@ const MoviesList = ({ loading, results }) => (
 );
 
 const options = {
-	collection: Movies
-	// fragmentName: 'MoviesFragment', // uncomment on #Step11
+	collection: Movies,
+	fragmentName: 'MoviesFragment' // uncomment on #Step11
 };
 
 registerComponent({

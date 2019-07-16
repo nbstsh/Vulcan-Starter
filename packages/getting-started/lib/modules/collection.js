@@ -28,9 +28,9 @@ Movies = createCollection({
 
   schema,
 
-  resolvers: getDefaultResolvers('Movies') // Uncomment on #Step9
+  resolvers: getDefaultResolvers('Movies'), // Uncomment on #Step9
 
-  // mutations: getDefaultMutations('Movies') // Uncomment on #Step14
+  mutations: getDefaultMutations('Movies') // Uncomment on #Step14
 });
 
 export default Movies;
