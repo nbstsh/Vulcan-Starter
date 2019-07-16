@@ -34,7 +34,7 @@ Movies Example App Components
 */
 
 import '../components/movies/MoviesApp.jsx';
-// import '../components/movies/MoviesApp2.jsx'; // uncomment on #Step16
+import '../components/movies/MoviesApp2.jsx'; // uncomment on #Step16
 import '../components/movies/MoviesList.jsx';
 import '../components/movies/MoviesUsers.jsx';
 import '../components/movies/MoviesNew.jsx';
