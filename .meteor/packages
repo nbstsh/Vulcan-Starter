@@ -14,7 +14,7 @@ accounts-password@1.5.1
 
 ############ Your Packages ############
 
-getting-started
+#getting-started
 
 # example-simple
 # example-movies
@@ -27,3 +27,4 @@ getting-started
 # example-reactions
 # example-forms
 tmeasday:check-npm-versions
+my-package
